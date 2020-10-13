@@ -5,6 +5,8 @@ import com.itmuch.cloud.microservicesimpleprovideruser.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 /**
  * @author:crelle
  * @className:UserController
@@ -22,6 +24,11 @@ public class UserController {
     public User findById(@PathVariable Long id){
         User findOne = this.userRepository.getOne(id);
         return findOne;
+    }
+
+    @GetMapping("/user")
+    public List<User> findAll(){
+        return this.userRepository.findAll();
     }
 
     @PostMapping("/user")
