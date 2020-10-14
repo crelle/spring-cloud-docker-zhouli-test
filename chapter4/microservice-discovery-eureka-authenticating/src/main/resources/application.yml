@@ -1,0 +1,14 @@
+server:
+  port: 8761
+eureka:
+  client:
+    register-with-eureka: false #是否将自己注册到Eureka Server,默认为true,由于当前应用就是Eureka Server,故而设置为false
+    fetch-registry: false #Eureka集群同步节点信息使用，默认为true，当前为但节点，故而设置为false
+    serviceUrl:
+      defaultZone: http://crelle:123456@localhost:8761/eureka/
+security:
+  basic:
+    enabled: false #开启基于HTTP Basic的认证
+  user:
+    name: crelle #配置登录的账号是crelle
+    password: 123456 #配置登录的密码是123456

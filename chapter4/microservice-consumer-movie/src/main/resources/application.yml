@@ -1,0 +1,17 @@
+#########################server配置################
+server:
+  port: 8010
+####################属性配置##################
+user:
+  userServiceUrl: http://localhost:8000/user/
+#####################spring配置####################
+spring:
+  application:
+    name: microservice-consumer-movie
+######################eureka配置##########################
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true #默认true将服务的ip注册到eureka。false:将操作系统的ip注册到eureka

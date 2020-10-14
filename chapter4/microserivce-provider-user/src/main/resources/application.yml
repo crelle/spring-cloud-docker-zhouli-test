@@ -1,6 +1,7 @@
+#####################server配置##################
 server:
   port: 8000
-
+####################management配置###################
 management:
   security:
     enabled: false
@@ -8,6 +9,7 @@ management:
     web:
       exposure:
         include: "*"
+###################spring配置####################
 spring:
   application:
     name: microservice-provider-user
@@ -28,15 +30,17 @@ spring:
     data: classpath:data.sql
     initialization-mode: always
     platform: mysql
+##################日志配置#####################
 logging:
   level:
     root: INFO
     org.hibernate: INFO
     org.hibernate.type.descriptor.sql.BasicBinder: TRACE
     org.hibernate.type.descriptor.sql.BasicExtractor: TRACE
+######################eureka配置##########################
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka/
   instance:
-    prefer-ip-address: true
+    prefer-ip-address: true #默认true将服务的ip注册到eureka。false:将操作系统的ip注册到eureka
