@@ -4,5 +4,8 @@
     <file url="file://$PROJECT_DIR$/chapter3/microservice-simple-consumer-movie/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/chapter3/microservice-simple-provider-user/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/chapter3/microservice-simple-provider-user/src/main/resources/application.yml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/chapter4/microserivce-provider-user/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/chapter4/microserivce-provider-user/src/main/resources/application.yml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/chapter4/microservice-discovery-eureka/src/main/java" charset="UTF-8" />
   </component>
 </project>

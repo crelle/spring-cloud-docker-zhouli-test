@@ -1,0 +1,8 @@
+server:
+  port: 8761
+eureka:
+  client:
+    register-with-eureka: false #是否将自己注册到Eureka Server,默认为true,由于当前应用就是Eureka Server,故而设置为false
+    fetch-registry: false #Eureka集群同步节点信息使用，默认为true，当前为但节点，故而设置为false
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
