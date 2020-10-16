@@ -1,0 +1,48 @@
+#####################server配置##################
+server:
+  port: 8000
+####################management配置###################
+management:
+  security:
+    enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+###################spring配置####################
+spring:
+  application:
+    name: microservice-provider-user
+  jpa:
+    generate-ddl: false
+    show-sql: true
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    hibernate:
+      ddl-auto: update
+
+  datasource:
+    url: jdbc:mysql://192.168.74.4:3306/springcloud_docker_test?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    username: crelle
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    schema: classpath:schema.sql
+    data: classpath:data.sql
+    initialization-mode: always
+    platform: mysql
+##################日志配置#####################
+logging:
+  level:
+    root: INFO
+    org.hibernate: INFO
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+    org.hibernate.type.descriptor.sql.BasicExtractor: TRACE
+######################eureka配置##########################
+eureka:
+  client:
+    service-url:
+      defaultZone: http://192.168.74.3:8761/eureka/,http://192.168.74.4:8761/eureka,http://192.168.74.5:8761/eureka
+    register-with-eureka: true
+    fetch-registry: true
+  instance:
+    prefer-ip-address: true #默认true将服务的ip注册到eureka。false:将操作系统的ip注册到eureka

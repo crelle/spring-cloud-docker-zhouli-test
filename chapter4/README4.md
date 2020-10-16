@@ -9,5 +9,5 @@
 ####microservice-discovery-eureka-ha
     用途：高可用注册中心
     启动：
-        java -jar microservice-discovery-eureka-ha-0.0.1-SNAPSHOT.jar --spring.profile.active=peer1
-        java -jar microservice-discovery-eureka-ha-0.0.1-SNAPSHOT.jar --spring.profile.active=peer2
+        java -jar microservice-discovery-eureka-ha-0.0.1-SNAPSHOT.jar --spring.profiles.active=peer1
+        java -jar microservice-discovery-eureka-ha-0.0.1-SNAPSHOT.jar --spring.profiles.active=peer2

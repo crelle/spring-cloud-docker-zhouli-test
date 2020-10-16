@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/chapter4/microserivce-provider-user/microserivce-provider-user.iml" filepath="$PROJECT_DIR$/chapter4/microserivce-provider-user/microserivce-provider-user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chapter6/microserivce-provider-user6/microserivce-provider-user6.iml" filepath="$PROJECT_DIR$/chapter6/microserivce-provider-user6/microserivce-provider-user6.iml" />
       <module fileurl="file://$PROJECT_DIR$/chapter4/microservice-consumer-movie/microservice-consumer-movie.iml" filepath="$PROJECT_DIR$/chapter4/microservice-consumer-movie/microservice-consumer-movie.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chapter6/microservice-consumer-movie-feign/microservice-consumer-movie-feign.iml" filepath="$PROJECT_DIR$/chapter6/microservice-consumer-movie-feign/microservice-consumer-movie-feign.iml" />
       <module fileurl="file://$PROJECT_DIR$/chapter4/microservice-discovery-eureka/microservice-discovery-eureka.iml" filepath="$PROJECT_DIR$/chapter4/microservice-discovery-eureka/microservice-discovery-eureka.iml" />
       <module fileurl="file://$PROJECT_DIR$/chapter4/microservice-discovery-eureka-authenticating/microservice-discovery-eureka-authenticating.iml" filepath="$PROJECT_DIR$/chapter4/microservice-discovery-eureka-authenticating/microservice-discovery-eureka-authenticating.iml" />
       <module fileurl="file://$PROJECT_DIR$/chapter4/microservice-discovery-eureka-ha/microservice-discovery-eureka-ha.iml" filepath="$PROJECT_DIR$/chapter4/microservice-discovery-eureka-ha/microservice-discovery-eureka-ha.iml" />

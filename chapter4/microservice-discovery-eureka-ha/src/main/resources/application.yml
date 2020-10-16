@@ -2,29 +2,34 @@
 spring:
   application:
     name: microservice-discovery-eureka-ha
+eureka:
+  client:
+    register-with-eureka: true #是否将自己注册到Eureka Server,默认为true,由于当前应用就是Eureka Server,故而设置为false
+    fetch-registry: true #Eureka集群同步节点信息使用，默认为true，当前为但节点，故而设置为false
+    serviceUrl:
+      defaultZone: http://192.168.74.3:8761/eureka/,http://192.168.74.4:8761/eureka,http://192.168.74.5:8761/eureka
 ---
 spring:
-  profiles: peer1
+  profiles: endip3
 server:
   port: 8761
 eureka:
   instance:
-    hostname: peer1
-  client:
-    register-with-eureka: true #是否将自己注册到Eureka Server,默认为true,由于当前应用就是Eureka Server,故而设置为false
-    fetch-registry: true #Eureka集群同步节点信息使用，默认为true，当前为但节点，故而设置为false
-    serviceUrl:
-      defaultZone: http://peer2:8762/eureka/
+    hostname: 192.168.74.3
+
 ---
 spring:
-  profiles: peer2
+  profiles: endip4
 server:
-  port: 8762
+  port: 8761
 eureka:
   instance:
-    hostname: peer2
-  client:
-    register-with-eureka: true #是否将自己注册到Eureka Server,默认为true,由于当前应用就是Eureka Server,故而设置为false
-    fetch-registry: true #Eureka集群同步节点信息使用，默认为true，当前为但节点，故而设置为false
-    serviceUrl:
-      defaultZone: http://peer1:8761/eureka/
+    hostname: 192.168.74.4
+---
+spring:
+  profiles: endip5
+server:
+  port: 8761
+eureka:
+  instance:
+    hostname: 192.168.74.5

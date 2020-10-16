@@ -9,15 +9,19 @@
         <module name="microservice-discovery-eureka-authenticating" />
         <module name="microservice-simple-consumer-movie" />
         <module name="microservice-discovery-eureka" />
+        <module name="microserivce-provider-user6" />
         <module name="microserivce-provider-user" />
         <module name="microservice-discovery-eureka-ha" />
         <module name="microservice-consumer-movie" />
         <module name="microservice-simple-provider-user" />
+        <module name="microservice-consumer-movie-feign" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
       <module name="microserivce-provider-user" target="1.8" />
+      <module name="microserivce-provider-user6" target="1.8" />
       <module name="microservice-consumer-movie" target="1.8" />
+      <module name="microservice-consumer-movie-feign" target="1.8" />
       <module name="microservice-discovery-eureka" target="1.8" />
       <module name="microservice-discovery-eureka-authenticating" target="1.8" />
       <module name="microservice-discovery-eureka-ha" target="1.8" />
@@ -29,7 +33,9 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="microserivce-provider-user" options="-parameters" />
+      <module name="microserivce-provider-user6" options="-parameters" />
       <module name="microservice-consumer-movie" options="-parameters" />
+      <module name="microservice-consumer-movie-feign" options="-parameters" />
       <module name="microservice-discovery-eureka" options="-parameters" />
       <module name="microservice-discovery-eureka-authenticating" options="-parameters" />
       <module name="microservice-discovery-eureka-ha" options="-parameters" />
